@@ -1,0 +1,22 @@
+{
+  "name": "core",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "ts-node server.ts",
+    "start:pm2": "pm2-runtime ts-node --env production -i 3 --raw --output /dev/stdout --error /dev/stdout -- --transpile-only server.ts"
+  },
+  "dependencies": {
+    "@types/koa": "^2.13.3",
+    "koa": "^2.13.1",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
+  },
+  "workspaces": {
+    "nohoist": [
+      "**"
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "content",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "start:pm2": "pm2-runtime server.js "
+  },
+  "dependencies": {
+    "koa": "^2.13.1"
+  }
+}
